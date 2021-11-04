@@ -1,0 +1,226 @@
+#container{
+width:110%;
+margin:0 -10;
+
+background-color:#fff;
+
+color:#333；
+line-height:130%;
+}
+#darkmask{
+width:100%;
+height:131;
+position:absolute;
+left:0;
+top:0;
+background-image:url(darkmask.jpg);
+
+}
+#top{
+padding: 10px 0px 8cm 0px;
+
+background-image:url(0.jpg);
+background-position: -50px 0px;
+background-repeat:no-repeat;
+background-size:cover;
+}
+#top  a {	
+  position:relative;
+  left:300px;
+  top:20px;
+  
+  color: #FFF;
+  margin:0 50 0 10;
+  text-align: center;
+  text-decoration: none;   
+ 
+   font-size: 18px;
+   letter-spacing: 1px;
+}
+#top  a:hover {
+   color:#bb9a6c;
+}
+#top a:link {
+  font-size:18px;
+}
+#top img{
+ position:absolute;
+ left:-200px;
+ top:-15px;
+}
+#mid a{
+ position:absolute;
+ left:650px;
+ top:250px;
+ display: block;
+ width: 160px;
+ height: 40px;
+background-color:#1e1e20;
+text-align: center;
+line-height: 40px;
+font-size:20px;
+color:#bb9a6c;
+border: 1px #bb9529 solid;
+}
+#leftnav{
+width:900px;
+margin:0;
+padding:1em;
+float:left;
+}
+#photo{
+    width: 820px;
+    height: 380px;
+    margin: 0px  0 0 25;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 0 10px 80px rgba(0,0,0,.6)
+    
+}
+#photo img{
+    width: 820px;
+    height: 340px;
+}
+.photo input{
+    display: none;
+}
+.image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.7s;
+}
+.image img{
+ 
+}
+.nav label{
+    width: 150px;
+    height: 340px;
+    
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 325px;
+    text-align: center;
+    text-shadow: 0 0 15px #555555);
+}
+
+
+.leftjianbian{
+    background: linear-gradient(right , rgba(250, 242, 239,0) 1% , rgba(158, 148, 166,0.5) 100%);
+    background: -o-linear-gradient(right , rgba(250, 242, 239,0) 1% , rgba(158, 148, 166,0.5) 100%);
+    background: -ms-linear-gradient(right , rgba(250, 242, 239,0) 1% , rgba(158, 148, 166,0.5) 100%);
+    background: -moz-linear-gradient(right , rgba(250, 242, 239,0) 1% , rgba(158, 148, 166,0.5) 100%);
+    background: -webkit-linear-gradient(right , rgba(250, 242, 239,0) 1% , rgba(158, 148, 166,0.5) 100%);
+}
+.rightjianbian{
+    background: linear-gradient(left , rgba(250, 242, 239,0) 1% , rgba(158, 148, 166,0.5) 100%);
+    background: -o-linear-gradient(left , rgba(250, 242, 239,0) 1% , rgba(158, 148, 166,0.5) 100%);
+    background: -ms-linear-gradient(left , rgba(250, 242, 239,0) 1% , rgba(158, 148, 166,0.5) 100%);
+    background: -moz-linear-gradient(left , rgba(250, 242, 239,0) 1% , rgba(158, 148, 166,0.5) 100%);
+    background: -webkit-linear-gradient(left , rgba(250, 242, 239,0) 10% , rgba(158, 148, 166,0.5) 100%);
+}
+.image:hover + .nav label{
+    opacity: 0.5;
+}
+.nav label:hover{
+    opacity: 1;
+}
+.nav .down{
+    right: 0;
+}
+input:checked + .control .image{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1s;
+}
+input:checked + .control .nav label{
+    display: block;
+}
+.dots{
+    width:100%;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+.dot{
+    width: 164px;
+    height: 50px;
+    margin: 0px -2.5px;
+    line-height: 40px;
+    
+    position: relative;
+    display: inline-block;
+    background-color:#e3e2e2;
+}
+input#img1:checked ~ .dots label#dot1,
+input#img2:checked ~ .dots label#dot2,
+input#img3:checked ~ .dots label#dot3,
+input#img4:checked ~ .dots label#dot4,
+input#img5:checked ~ .dots label#dot5,
+input#img6:checked ~ .dots label#dot6{
+    background-color: #f7f6f6;
+}
+
+
+
+
+#content {
+margin-left: 900px;
+    width: 550px;
+    height: 350px;
+margin-top:45px;
+
+
+max-width:40em; /* 最大宽度是40个字高 */
+}
+.biaoti{
+margin-left:30;
+}
+#content a{
+text-decoration: none;  
+text-align: center;
+color:#0da0b4;
+}
+#content a:hover {
+color:#cdbe91;
+}
+
+#content ul li{
+margin:10px;
+list-style: none;
+
+}
+#content ul li a{
+color: #424242;
+}
+.zixun{
+display: block;
+    width: 450px;
+    height: 40px;
+    background-color: #e3e2e2;
+    line-height: 40px;
+    text-align: center;
+}
+#content ul li span{
+color: #bb9a6c;
+ border: 1px #c5ab86 solid;
+}
+#footer {
+clear: both;
+margin: 0;
+padding: 0.5em;
+color: #333;
+background-color: #ddd;
+border-top: 1px solid gray;
+}
